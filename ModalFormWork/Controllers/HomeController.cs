@@ -10,11 +10,15 @@ namespace ModalFormWork.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Home";
+            ViewBag.Message = "Your home page.";
+
             return View();
         }
 
         public ActionResult About()
         {
+            ViewBag.Title = "About";
             ViewBag.Message = "Your application description page.";
 
             return View();
